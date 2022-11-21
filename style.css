@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color:#EFEEF1;
+}
+
+
+
+.logo{
+    font-size:30px;
+    font-weight: bold;
+    font-family: 'Arima', cursive;
+    padding:5px 5px;
+}
+
+.navbar{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* .image{
+    width: 30px;
+    background: linear-gradient(90deg, rgba(235,51,54,100%)0%,rgba(22,63,90,100%)50%, rgba(49,44,158,100%)100%);
+} */
+
+img{
+    width:314px;
+    height:334px;
+    object-fit: cover;
+    border: 1px solid black;
+    margin: 30px;
+    border-radius: 12px;
+    justify-content:center;
+    align-items:center;
+    
+}
+
+.hero{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    text-align: center;
+    overflow: hidden;
+    margin:0 auto;
+}
+
+.about{
+    margin: 99px;
+}
+
+.skills{
+    margin: 59px;
+}
+
+.skill-set{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    gap:20px;
+    margin-top: 20px;
+    margin:0 auto;
+    justify-content:center;
+    text-align: center;
+}
+
+.skill{
+    border: 1px solid black;
+    border-radius:5px;
+    padding: 10px;
+    background-color:rgb(151, 149, 149);
+    color:white;
+    margin-top: 20px;
+    box-shadow: border;
+   
+}
+
+.skill-text{
+    text-align:center;
+    font-size: 30px;
+    font-weight: bold;
+    color:#000;
+}
+
+.footertext{
+    overflow: hidden;
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+    color:white;
+    bottom: fixed;
+    background-color:rgb(151, 149, 149);
+    padding: 5px 5px;
+    font-size:18px;
+    border-top: 1px solid #000;
+}
+
+ul {
+    list-style-type: none;
+    position: sticky;
+    width:100%;
+    top:0;
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;
+    padding:5px 5px;
+ 
+  }
+  
+  li {
+    float: left;
+  }
+
+  .work{
+    border-radius:5px 5px;
+    background-color:#000;
+    color:white;
+  }
+
+  li a {
+     display: block;
+    color: #000;
+    border-radius:5px 5px;
+    font-size:20px;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    
+  }
+  .active{
+  color: white;
+  }
+  li a:hover {
+    background-color: #000;
+    color: white;
+  }
+  
+  .para1{
+    font-size:80px;
+    font-weight: 500px;
+    color: #1a1c21;
+    width:600px;
+    line-height: 90px;
+    justify-content: center;
+    place-items: center;
+
+  }
+
+  .para2{
+    font-size:20px;
+    line-height: 35px; 
+    width:600px;    
+  }
+
+  .para22{
+    font-size:20px;
+    line-height: 35px; 
+    color:#000;
+    width: 800px;
+    justify-content:center;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+
+@media only screen and (max-width: 600px) {
+    .navbar{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .hero{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    img{
+        width:50%;
+        place-items: center;
+        justify-content:center;
+        align-items: center;
+        display: flex;
+        border-radius: 12px;
+    }
+
+
+    .para1{
+        font-size:40px;
+        font-weight: 500px;
+        color: #1a1c21;
+        width:600px;
+        line-height: 90px;
+        justify-content: center;
+        place-items: center;
+    
+      }
+
+    .para22{
+        font-size:20px;
+        line-height: 35px; 
+        color:#000;
+        width:200px;
+        justify-content:center;
+        text-align: center;
+        margin: 0 auto;
+      }
+
+      .para2{
+        font-size:15px;
+        line-height: 25px; 
+        width:200px
+      }
+}
+
+@media only screen and (max-width: 768px) {
+
+     .hero{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    } 
+
+    .para1{
+        font-size:50px;
+        font-weight: 500px;
+        color: #1a1c21;
+        width:400px;
+        line-height: 90px;
+        justify-content:center;
+        text-align: center;
+        margin: 0 auto;
+    
+      }
+
+    img{
+        width:56%;
+        place-items: center;
+        justify-content:center;
+        align-items: center;
+        display: flex;
+        border-radius: 12px;
+        justify-content:center;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+
+
+    .para2{
+        font-size:15px;
+        line-height: 25px; 
+        width:400px;
+        justify-content:center;
+        text-align: center;
+        margin: 0 auto;
+      }
+
+      .para22{
+        font-size:20px;
+        line-height: 35px; 
+        color:#000;
+        margin:10px;
+        width: 220px;
+        justify-content:center;
+        text-align: center;
+        margin: 0 auto;
+      }
+}
